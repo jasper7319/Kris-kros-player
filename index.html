@@ -41,9 +41,9 @@ a{color:#7de6bd}
 <section class="card">
   <div class="status" id="status">Nieuwste mixtapes ophalen…</div>
   <div class="showtitle" id="showtitle">Kris Kross Amsterdam</div>
-  <div class="meta" id="showmeta">Startpositie: 15:00</div>
+  <div class="meta" id="showmeta">Startpositie: 20:00</div>
   <iframe id="player" title="Mixcloud speler" allow="autoplay" scrolling="no"></iframe>
-  <button class="primary" id="start">▶ Start vanaf 15:00</button>
+  <button class="primary" id="start">▶ Start vanaf 20:00</button>
   <div class="note">Tik op Start als de speler klaarstaat. Mixcloud kan afspelen pas na jouw tik toestaan. De muziek wordt rechtstreeks door de officiële Mixcloud-speler geleverd.</div>
 </section>
 <section class="card">
@@ -60,7 +60,7 @@ a{color:#7de6bd}
 <script>
 const API = "https://api.mixcloud.com/kriskrossamsterdam/cloudcasts/?limit=20";
 const EMBED = "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=";
-const START_SECONDS = 900;
+const START_SECONDS = 1200;
 let items = [];
 let selected = null;
 let widget = null;
