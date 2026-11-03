@@ -102,7 +102,7 @@ function choose(index){
   const key=showKey(item);
   $("showtitle").textContent=item.name||"Kris Kross Amsterdam";
   const date=item.created_time ? new Date(item.created_time).toLocaleDateString("nl-NL") : "";
-  $("showmeta").textContent="Startpositie: 15:00"+(date?" · "+date:"");
+  $("showmeta").textContent="Startpositie: 20:00"+(date?" · "+date:"");
   const frame=$("player");
   widget=null;
   frame.onload=()=>{
@@ -119,8 +119,8 @@ function choose(index){
       const allowed=await widget.seek(START_SECONDS);
       if(allowed===false){setStatus("Mixcloud staat springen naar 15:00 voor deze mix niet toe. Gebruik de speler om vooruit te spoelen.");return}
       await widget.play();
-      setStatus("Startpositie ingesteld op 15:00. Als afspelen niet vanzelf begint, tik dan op Play in de speler.");
-    }catch(e){setStatus("De speler kon niet naar 15:00 springen. Probeer Play in de speler en daarna opnieuw Start vanaf 15:00.")}
+      setStatus("Startpositie ingesteld op 20:00. Als afspelen niet vanzelf begint, tik dan op Play in de speler.");
+    }catch(e){setStatus("De speler kon niet naar 20:00 springen. Probeer Play in de speler en daarna opnieuw Start vanaf 20:00.")}
   };
   $("shows").value=String(index);
 }
